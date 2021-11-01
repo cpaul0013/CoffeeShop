@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<h1>Registration</h1>
+<h2> Welcome to the New User Registration</h2>
+
+<form method="post" asp-action="Result">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="Email" name="Email" /><br>
+    <label for="password">Password: </label><br>
+    <input type="password" id="password" name="password" /><br>
+    <label for="birthday">Birthday(Receive Special Gift):</label><br>
+    <input type="date" id="birthday" name="birthday"><br>
+    <label for="cars">Choose your favorite drink:</label>
+
+    <select name="Favorite Drink" id="Fave Drink">
+        <option value="blackCoffee">Black Coffee</option>
+        <option value="psl">Pumpkin Spice Latte</option>
+        <option value="hangover">Hangover Helper</option>
+        <option value="Espresso">Espresso</option>
+        <option value="redeye">Red Eye</option>
+        <option value="procrastinator">Procrastinator</option>
+        <option value="hotchoc"> Hot Chocolate</option>
+        <option value="orangejuice">Orange Juice</option>
+    </select>
+    <input type="submit" />
+</form>
